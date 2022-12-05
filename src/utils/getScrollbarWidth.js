@@ -16,8 +16,6 @@ export default function getScrollbarWidth(cacheEnabled = true) {
         });
         document.body.appendChild(div);
 
-        console.log('DEBUG #1 - getScrollbarWidth', div.offsetWidth, div.clientWidth);
-
         if (div.offsetWidth !== 0 && div.clientWidth !== 0) {
             scrollbarWidth = (div.offsetWidth - div.clientWidth);
         } else {
